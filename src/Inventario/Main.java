@@ -151,15 +151,9 @@ public class Main {
                     nombreArchivoImagen += ".jpg";
                 }
 
-                String rutaImagenProducto = "img_productos/" + nombreArchivoImagen;
-                File archivoImagen = new File(
-                        System.getProperty("user.dir")
-                                + File.separator +
-                                "img_productos"
-                                + File.separator +
-                                nombreArchivoImagen
-                );
-
+               String rutaImagenProducto = "img_productos/" + nombreArchivoImagen;
+                File archivoImagen = new File(rutaImagenProducto);
+                
                 if (archivoImagen.exists()) {
                     System.out.println("Imagen encontrada");
                 } else {
